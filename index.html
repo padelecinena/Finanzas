@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Control de Gastos</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="logo">€</div><div><b>Control de Gastos</b><span>Finanzas personales</span></div></div>
+    <nav>
+      <button class="nav active" data-view="dashboard">Resumen</button>
+      <button class="nav" data-view="movements">Movimientos</button>
+      <button class="nav" data-view="rules">Reglas</button>
+      <button class="nav" data-view="budget">Presupuesto</button>
+    </nav>
+    <div class="sidebar-foot">Datos guardados en este navegador</div>
+  </aside>
+  <main>
+    <header><div><h1 id="title">Resumen</h1><p id="subtitle">Tu situación financiera de un vistazo</p></div><div class="actions"><button class="secondary" id="resetBtn">Restablecer demo</button><label class="primary file">Importar CSV<input id="csvInput" type="file" accept=".csv,text/csv"></label></div></header>
+    <section id="content"></section>
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
